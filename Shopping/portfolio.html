@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awaresome CDN Link -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Varela+Round" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fonts.css" type="text/css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--Style Sheet-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Home | Germiston Motors</title>
+</head>
+<body>
+    <!--Top-->
+   
+        <div id="header-wrapper">
+            <div id="header" class="container">
+                <div id="logo">
+                    <h1>GM mechanics</h1>
+                  
+                </div>
+                
+            </div>
+            <div id="menu" class="container">
+                
+
+            </div>
+        </div>
+        
+        
+   
+    <!--navigation bar-->
+    <div class="btn">
+        <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+        <div class="text"> Germiston Motors </div>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            
+        <li><a href="services.html" class="serv-btn">About
+            <span class="fas fa-caret-down second"></span>
+        </a>
+        <ul class="serv-show">
+            <li><a href="#">Car Diagnosis</a></li>
+            <li><a href="#">Car Mechanics</a></li>
+
+        </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="feedback.html">FeedBack</a></li>
+        <li><a href="ourteam.html">OurTeam</a></li>
+        <li><a href="portfolio.html">Portfolia</a></li>
+        </ul>
+
+    </nav>
+    
+    <!--Top Section-->
+    <section id="top-pic">
+        <h1>Germiston motors</h1>
+        <p>One stop mechanic shop</p>
+    </section>
+    <div class="shop-heading">
+        <div class="topText">
+            <center>
+                <h1>About US</h1>
+                <hr width="50%">
+                <p>The GM Mechanics has professional technicians with expertise on all makes of passenger and commercial vehicles.
+
+                    Car and truck breakdowns – no need to tow your vehicle we come to you!
+                    
+                    The Mobile Mechanic will repair your vehicle when and where it’s convenient for you.
+                    
+                    Specialising in car repairs, truck repairs and vehicle services in and around Gauteng.</p>
+            </center>
+        </div>
+
+    </div>
+    <!--Shop Items-->
+    <section id="shopItems">
+        <ul>
+            <li class="shop-item">
+                <img src="./images/g1.jpg" alt="garage" class="productImg">
+                <div class="details">
+                    <h2>Mechanical Works</h2>
+                    <p>We do all mechanics works</p>
+        
+                </div>
+            </li>
+            <li class="shop-item">
+                <img src="./images/g2.jpg" alt="garage" class="productImg">
+                <div class="details">
+                    <h2>Engine Timing</h2>
+                    <p>All model engine timings</p>
+                </div>
+            </li>
+            <li class="shop-item">
+                <img src="./images/g3.jpg" alt="garage" class="productImg">
+                <div class="details">
+                    <h2>Wheel Alignment</h2>
+                    <p>Wheel balancing services</p>
+        
+                </div>
+            </li>
+            <li class="shop-item">
+                <img src="./images/g4.jpg" alt="garage" class="productImg">
+                <div class="details">
+                    <h2>Car Diagnostics</h2>
+                    <p>ECU Diagnostics all makes</p>
+        
+                </div>
+            </li>
+            <li class="shop-item">
+                <img src="./images/g5.jpg" alt="garage" class="productImg">
+                <div class="details">
+                    <h2>Oil Change</h2>
+                    <p>Oil Change & filters, Air Filter</p>
+        
+                </div>
+            </li>
+            <li class="shop-item">
+                <img src="./images/g6.jpg" alt="garage" class="productImg">
+                <div class="details">
+                    <h2>Engine Overhaul</h2>
+                    <p>From top to bottom</p>
+        
+                </div>
+            </li>
+            
+
+        </ul>
+
+    </section>
+    <!--Shopping Cart-->
+    <div class="cart" id="cart">
+        <div class="top">
+            <span class="fas fa-times" onclick="cartHidden()"></span>
+        </div>
+        <div class="items">
+            <ul id="cartDisplay"></ul>
+        </div>
+        <div class="bottom" id="bottom">
+            <h4>SubTotal: R<span>300</span></h4>
+            <a href="#checkOut.html" class="btn">Check Out</a>
+        </div>
+
+    </div>
+    <!--Footer-->
+    <div id="footer">
+        <p>
+            &copy; All Rights reserved. Designed by Germiston Mechanics.
+            <a href="#mailto:"> Contact Us On Email</a>
+        </p>
+        
+
+    </div>
+    <script>
+        $('.btn').click(function()
+        {
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show")
+        });
+        $('.feat-btn').click(function()
+        {
+            $('nav ul .feat-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate")
+        });
+        $('.serv-btn').click(function()
+        {
+            $('nav ul .serv-show').toggleClass("show1");
+            $('nav ul .second').toggleClass("rotate")
+        });
+        $('nav ul li').click(function()
+        {
+            $(this).addClass("active").siblings().removeClass("active")
+        });
+    </script>
+    <script src="index.js"></script>
+   
+    
+</body>
+</html>
